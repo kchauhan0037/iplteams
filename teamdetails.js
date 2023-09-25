@@ -30,29 +30,7 @@ if (teamdatafromlocal[id]) {
     teamdetailscontainer.innerHTML = "<p>Team not found.</p>";
 }
 
-// var allplayerscontainer=document.getElementById('allplayerscontainer')
 
-// for(var i=0;i<playeratafromlocal.length;i++){
-
-//     if(teamdatafromlocal[id].topBatsman==playeratafromlocal[i].playerName || teamdatafromlocal[id].topBowler==playeratafromlocal[i].playerName || teamdatafromlocal[id].teamName==playeratafromlocal[i].playerfrom){
-//         allplayerscontainer.innerHTML+=`<div class="allplayerscontainercard" id="player${playeratafromlocal[i].id}">
-
-//         <img src="${playeratafromlocal[i].player_photo_url}" class="playerimg" alt="">
-//         <p>${playeratafromlocal[i].playerName}</p>
-//         <p>${playeratafromlocal[i].playerprice}</p>
-
-//     </div>`
-//     }
-// }
-
-// var allplayerscontainercard=document.getElementsByClassName('allplayerscontainercard')
-// for (var i = 0; i < allplayerscontainercard.length; i++) {
-//     allplayerscontainercard[i].addEventListener('click', function () {
-//         var playerId = this.getAttribute('id');
-//         var url = `playerdetails.html?playerId=${playerId}`;
-//         window.location.href = url;
-//     });
-// }
 
 var allplayerscontainer = document.getElementById('allplayerscontainer');
 
@@ -85,6 +63,4 @@ for (var i = 0; i < playeratafromlocal.length; i++) {
         allplayerscontainer.appendChild(playerCard);
     }
 }
-
-
 
