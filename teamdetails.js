@@ -40,7 +40,7 @@ for (var i = 0; i < playeratafromlocal.length; i++) {
         teamdatafromlocal[id].topBowler == playeratafromlocal[i].playerName ||
         teamdatafromlocal[id].teamName == playeratafromlocal[i].playerfrom
     ) {
-        var playerId = `player${playeratafromlocal[i].id-1}`;
+        var playerId = `player${playeratafromlocal[i].id}`;
 
         var playerCard = document.createElement('div');
         playerCard.className = 'allplayerscontainercard';
