@@ -4,7 +4,7 @@ var playerdatafromlocal=JSON.parse(localStorage.getItem("players"));
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const playerId = urlParams.get('playerId');
-var id=parseInt(playerId.slice(6))
+var id=parseInt(playerId.slice(6))-1
 console.log(id)
 
 
