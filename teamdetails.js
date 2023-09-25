@@ -35,7 +35,7 @@ var allplayerscontainer=document.getElementById('allplayerscontainer')
 for(var i=0;i<playeratafromlocal.length;i++){
 
     if(teamdatafromlocal[id].topBatsman==playeratafromlocal[i].playerName || teamdatafromlocal[id].topBowler==playeratafromlocal[i].playerName || teamdatafromlocal[id].teamName==playeratafromlocal[i].playerfrom){
-        allplayerscontainer.innerHTML+=`<div class="allplayerscontainercard" id="player${playeratafromlocal[i].id}">
+        allplayerscontainer.innerHTML+=`<div class="allplayerscontainercard" id="player${playeratafromlocal[i].id-1}">
 
         <img src="${playeratafromlocal[i].player_photo_url}" class="playerimg" alt="">
         <p>${playeratafromlocal[i].playerName}</p>
