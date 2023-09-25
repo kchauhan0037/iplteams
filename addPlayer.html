@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">HOME</a></h1>
+        <div id="headerwrapper">
+            <button  id="addTeam"><a href="./addteam.html">Add Team</a></button>
+            
+        </div>
+        
+    </header>
+
+    <div class="addinfo"><h2>Add your player details</h2></div>
+
+
+    <div id="addplayercontainer">
+        <p>player name</p>
+        <input type="text" name="player_name" id="player_name">
+
+        <p>play from</p>
+        <input type="text" name="play_from" id="play_from">
+
+        <p>player photo url</p>
+        <input type="url" name="player_photo_url" id="player_photo_url">
+
+       
+        <p>price</p>
+        <input type="number" name="playerprice" id="playerprice">
+        <p>playing status</p>
+        <select name="" id="playingstatus">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>        
+        <p>role</p>
+        <select name="" id="role">
+            <option value="batsman">batsman</option>
+            <option value="bowler">bowler</option>
+            <option value="allrounder">allrounder</option>
+        </select><br><br>  
+
+        <button id="playersubmit">submit</button>
+    </div>
+
+    <script src="./addPlayer.js"></script>
+   
+</body>
+</html>
